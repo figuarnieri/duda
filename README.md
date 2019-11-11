@@ -1,2 +1,2 @@
-# duda
-Duda.js
+# Duda.js
+Simple Object Send
