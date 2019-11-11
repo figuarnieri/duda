@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        input{margin-bottom: 8px;}
+        pre{margin-top: 16px;}
+        .wrap{max-width: 600px;margin: 16px auto;}
+    </style>
+    <title>Duda.js</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Duda.js</h1>
+        <form id="form">
+            <input class="form-control" name="user.nickname" value="Fi123" />
+            <input class="form-control" name="user.name.firstname" value="Filipe" />
+            <input class="form-control" name="user.name.lastname" value="Guarnieri" />
+            <input class="form-control" name="user.active" value="true" />
+            <input class="form-control" name="user.age" value="28" />
+            <input class="form-control" name="user.family.wife" value="Duda Garcia" />
+            <input class="form-control" name="user.family.sisters" value="Fernanda Guarnieri" />
+            <input class="form-control" name="user.family.sisters" value="Amanda Guarnieri" />
+            <input class="form-control" name="user.family.sisters" value="Sarah Guarnieri" />
+            <input class="form-control" name="user.config[id]" value="1" />
+            <input class="form-control" name="NextId" data-key="user.config[id]" value="2" />
+            <input class="form-control" name="user.config[login]" value="JSON user.config[login] with data-type=&quot;json&quot;" data-value='[{"email":"example@example.net"},{"remember": true},{"email":"example@example.net"},{"data":"This is Custom Value"}]' data-type="json" />
+            <input class="form-control" name="user.config[custom]" data-value="This is Custom Value" value="Custom Value" />
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <pre id="pre" class="form-control" disabled></pre>
+        </form>
+    </div>
+    <!-- <script src="class.duda.js"></!-->
+    <script src="function.duda.js"></script>
+    <script>
+        /* Class Example */
+        /* new Duda('#form', (e) => {
+            console.log(e);
+            pre.innerHTML = 'Console.log atualizado! 🚀 (Open console browser)';
+        }); */
+
+        /* Function Example */
+        Duda('#form', (e) => {
+            console.log(e);
+            pre.innerHTML = 'Console.log atualizado! 🚀 (Open console browser)';
+        });
+
+    </script>
+</body>
+</html>
